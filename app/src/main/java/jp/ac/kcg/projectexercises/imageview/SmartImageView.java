@@ -26,7 +26,7 @@ import jp.ac.kcg.projectexercises.imageview.cache.ImageDownloader;
 import kotlin.Unit;
 
 /**
- * ImageView
+ * SmartImageView
  */
 public class SmartImageView extends ImageView {
     protected static final String PNG_EXTENSION = "[pP][nN][gG]";
@@ -42,17 +42,14 @@ public class SmartImageView extends ImageView {
 
     public SmartImageView(Context context) {
         super(context);
-        checkContext(context);
     }
 
     public SmartImageView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        checkContext(context);
     }
 
     public SmartImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        checkContext(context);
     }
 
     private void checkContext(Context context) {
@@ -107,6 +104,7 @@ public class SmartImageView extends ImageView {
      * @param url   ロードする画像のurl
      */
     public final void setImage(boolean cache, ProgressType type, String url) {
+        checkContext(getContext());
         if (url == null || url.equals("")) {
             imageUrl = "";
             setSaveImageFunctionEnabled(false, null);
