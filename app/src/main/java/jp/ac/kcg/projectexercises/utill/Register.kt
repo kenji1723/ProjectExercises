@@ -16,10 +16,10 @@ abstract class Register() {
     /**
      *@param context Context
      * @param tablaClass テーブルを表すクラスクラスのオブジェクト
-     * @param handle tablaClass で指定したテーブルのDAOをハンドルする関数 lambda
+     * @param handle tablaClass で指定したテーブルのDAOのハンドラ
      *
      */
-    protected fun <T, ID> handleDao(context: Context, tablaClass: Class<T>, handle: (Dao<T, ID>) -> Unit) {
+    protected fun <T, ID> handleDao(context: Context, tablaClass: Class<T>, handle: (dao: Dao<T, ID>) -> Unit) {
         var connectionSource: ConnectionSource? = null
         try {
             val helper = DataBaseHelper(context)

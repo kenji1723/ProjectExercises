@@ -2,6 +2,7 @@ package jp.ac.kcg.projectexercises.activites
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
 import android.view.KeyEvent
 import android.view.Window
@@ -23,6 +24,9 @@ open class ApplicationActivity : DialogActivity() {
         supportActionBar.setDisplayHomeAsUpEnabled(true)
     }
 
+    override final fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        super.onCreate(savedInstanceState, persistentState)
+    }
 
     override fun onResume() {
         Log.v(toString(), "onResume()")
