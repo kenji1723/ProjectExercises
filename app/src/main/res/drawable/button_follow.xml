@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:top="0dp">
+                <shape android:shape="rectangle" android:useLevel="false">
+                    <solid android:color="@color/button_pressed_follow_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="false">
+        <layer-list>
+            <item android:top="0dp">
+                <shape android:shape="rectangle" android:useLevel="false">
+                    <solid android:color="@color/button_follow_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

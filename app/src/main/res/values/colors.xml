@@ -3,4 +3,37 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <color name="primary_light">#fafafa</color>
+    <color name="primary_dark_light">#e0e0e0</color>
+    <color name="accent_light">#3f51b5</color>
+
+    <color name="primary_dark">#424242</color>
+    <color name="primary_dark_dark">#212121</color>
+    <color name="accent_dark">#2196f3</color>
+
+    <color name="accent_common">#2196f3</color>
+    <color name="button_follow_color">#407AF1</color>
+    <color name="button_pressed_follow_color">#205AD1</color>
+    <color name="button_un_follow_color">#DA3015</color>
+    <color name="button_pressed_un_follow_color">#DA3015</color>
+    <color name="invalid_component">#707070</color>
+    <color name="transparency">#00000000</color>
+    <color name="image_view_back_ground">#56A0A0A0</color>
+
+    <color name="button_pressed">#66212121</color>
+    <color name="button">#66424242</color>
+    <color name="button_not_enabled">#66e0e0e0</color>
+
+    <color name="button_light_pressed">#66757575</color>
+    <color name="button_light">#66e0e0e0</color>
+    <color name="button_light_not_enabled">#66212121</color>
+
+    <color name="trans_light">#669e9e9e</color>
+    <color name="trans_dark">#FA212121</color>
+
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_black">#000000</color>
+
 </resources>
