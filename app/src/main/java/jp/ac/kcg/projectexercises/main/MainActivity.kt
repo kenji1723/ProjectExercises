@@ -22,7 +22,7 @@ class MainActivity : ApplicationActivity() {
         //仮実装、
         ClientUsers.instance.loadUsers { users, success ->
             if (success) {
-                users[0].stream.addOnStatusListener { text.text = it.user.name + ":" + it.text }
+                runOnUiThread { users[0].stream.addOnStatusListener { text.text = it.user.name + ":" + it.text } }
             } else {
                 sendToast("ユーザーの認証に失敗しました。")
             }
